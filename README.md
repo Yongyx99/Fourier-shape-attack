@@ -2,13 +2,15 @@
 
 This repository contains the official implementation of **Unleashing the Representational Power of Fourier Shapes for Attacking Infrared Object Detection**. We study **physical adversarial attacks against infrared pedestrian detection** by parameterizing patch boundaries with learnable Fourier coefficients and mapping them to pixel-space masks through a differentiable winding-number formulation.
 
-Our central claim is that Fourier shapes resolve the long-standing tension between **shape expressiveness** and **optimization efficiency** in prior infrared attacks. The resulting patches are compact, closed, physically manufacturable, and highly effective in both digital and physical evaluations. In the physical setting, the paper reports an attack success rate above **88%** at distances greater than **25 m** under **conf.=0.5**.
+Our central claim is that Fourier shapes resolve the trade-off between **shape expressiveness** and **optimization efficiency** in prior infrared attacks. The resulting patches are compact, closed, physically manufacturable, and highly effective in both digital and physical evaluations. In the physical setting, the paper reports an attack success rate above **88%** at distances greater than 25m under conf.=0.5.
 
 ## Visual Overview
 
 For a concise visual summary of the method, pipeline, and physical deployment, see the project poster:
 
-![Poster](paper-sources/pngposter.png)
+<p align="center">
+  <img src="paper-sources/pngposter.png" alt="Poster" width="720">
+</p>
 
 Additional figures are available in `paper-sources/figs/`.
 
@@ -18,13 +20,13 @@ Additional figures are available in `paper-sources/figs/`.
 - **Fourier shape parameterization**: a compact set of Fourier coefficients defines a closed contour with substantially higher representational power than discrete grid-based formulations.
 - **End-to-end differentiable optimization**: the winding-number mapping provides an analytic bridge from boundary parameters to pixel masks, enabling gradient-based optimization.
 - **Physical realizability**: the optimized output is a single coherent contour, which is better aligned with physical fabrication and deployment.
-- **Rigorous evaluation**: the work emphasizes attack performance across confidence thresholds rather than relying on a single permissive operating point.
+- **Rigorous evaluation**: the work emphasizes attack performance across confidence thresholds rather than relying on a single criterion.
 
 ## Method
 
 The attack pipeline is:
 
-1. Parameterize the patch boundary with a truncated Fourier series.
+1. Parameterize the patch boundary with Fourier series.
 2. Convert the boundary into a differentiable binary-like mask via the winding number theorem.
 3. Place the patch on the pedestrian region.
 4. Minimize detector confidence with regularization on shape plausibility.
@@ -44,7 +46,7 @@ This repository currently focuses on the **YOLOv3-based infrared attack and eval
 ├── LLVIP_person/
 │   ├── instances_imgs/             # Cropped pedestrian instances
 │   └── instances_labels/           # Corresponding labels
-└── paper-sources/                  # Paper, poster, and figure assets
+└── paper-sources/                  # Poster and figure assets
 ```
 
 ## Environment
@@ -94,6 +96,7 @@ The released weights include:
 
 - `weights/infrared.pt`
 - `weights/visible.pt`
+
 The default attack pipeline uses `infrared.pt`.
 
 ## Quick Start
@@ -183,4 +186,4 @@ If this repository is useful for your research, please cite:
 
 ## Acknowledgment
 
-The detection component is built upon the YOLOv3 codebase and adapted for infrared object detection and adversarial evaluation.
+The detection component is built upon the YOLOv3 codebase and adapted for infrared object detection and attack evaluation.
