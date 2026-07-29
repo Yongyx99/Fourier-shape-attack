@@ -8,8 +8,7 @@ Our central claim is that Fourier shapes resolve the long-standing tension betwe
 
 For a concise visual summary of the method, pipeline, and physical deployment, see the project poster:
 
-- [Poster](paper-sources/poster.pdf)
-- [Paper PDF](paper-sources/FourierAttack_icml2026.pdf)
+- [Poster](paper-sources/pngposter.png)
 
 Additional figures are available in `paper-sources/figs/`.
 
