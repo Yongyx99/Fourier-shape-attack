@@ -8,7 +8,7 @@ Our central claim is that Fourier shapes resolve the long-standing tension betwe
 
 For a concise visual summary of the method, pipeline, and physical deployment, see the project poster:
 
-- [Poster](paper-sources/pngposter.png)
+![Poster](paper-sources/pngposter.png)
 
 Additional figures are available in `paper-sources/figs/`.
 
