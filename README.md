@@ -67,6 +67,12 @@ LLVIP_person/
 └── instances_labels/
 ```
 
+The training data are provided via Baidu Netdisk:
+
+- Baidu Netdisk link: `https://pan.baidu.com/s/1CXSr89QwL23Os4iQTrYamg?pwd=utrp`
+
+After downloading, please place the `LLVIP_person` folder in the project root directory.
+
 Image files and label files must share the same basename. The repository currently uses the normalized naming pattern:
 
 Labels are stored as:
@@ -79,11 +85,16 @@ class_id center_x center_y width height
 
 ## Weights
 
-Pretrained YOLOv3 weights included in the repository:
+The pretrained YOLOv3 weights are provided via Baidu Netdisk:
 
-- `yolov3/weights/infrared.pt`
-- `yolov3/weights/visible.pt`
+- Baidu Netdisk link: `https://pan.baidu.com/s/1nlRC5JC88WP4_N-iv08oQQ?pwd=utrp`
 
+After downloading, please place the `weights` folder at the same directory level as `yolov3`.
+
+The released weights include:
+
+- `weights/infrared.pt`
+- `weights/visible.pt`
 The default attack pipeline uses `infrared.pt`.
 
 ## Quick Start
@@ -167,8 +178,6 @@ If this repository is useful for your research, please cite:
   title={Unleashing the Representational Power of Fourier Shapes for Attacking Infrared Object Detection},
   author={Yong, Yixing and Wang, Jian and Lei, Ming and He, Lijun and Li, Fan},
   booktitle={Proceedings of the 43rd International Conference on Machine Learning},
-  series={PMLR},
-  volume={306},
   year={2026}
 }
 ```
