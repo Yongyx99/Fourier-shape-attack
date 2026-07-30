@@ -14,6 +14,10 @@ For a concise visual summary of the method, pipeline, and physical deployment, s
 
 Additional figures are available in `assets/figs/`.
 
+The experiment video demo has also been uploaded to Baidu Netdisk:
+
+- Baidu Netdisk link: `https://pan.baidu.com/s/1xJFcK5qmJcJCae4A74oyDg?pwd=utrp`
+
 ## Key Ideas
 
 - **Infrared-specific adversarial mechanism**: in thermal imagery, attack effectiveness is governed primarily by geometry rather than color or texture.
