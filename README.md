@@ -9,10 +9,10 @@ Our central claim is that Fourier shapes resolve the trade-off between **shape e
 For a concise visual summary of the method, pipeline, and physical deployment, see the project poster:
 
 <p align="center">
-  <img src="paper-sources/pngposter.png" alt="Poster" width="720">
+  <img src="assets/pngposter.png" alt="Poster" width="720">
 </p>
 
-Additional figures are available in `paper-sources/figs/`.
+Additional figures are available in `assets/figs/`.
 
 ## Key Ideas
 
@@ -46,7 +46,7 @@ This repository currently focuses on the **YOLOv3-based infrared attack and eval
 ├── LLVIP_person/
 │   ├── instances_imgs/             # Cropped pedestrian instances
 │   └── instances_labels/           # Corresponding labels
-└── paper-sources/                  # Poster and figure assets
+└── assets/                  # Poster and figure assets
 ```
 
 ## Environment
